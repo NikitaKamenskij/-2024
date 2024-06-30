@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин спецодежды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Магазин спецодежды</h1>
+
+        <div class="form-section">
+            <h2>Добавить спецодежду</h2>
+            <input type="text" id="вид-спецодежды" placeholder="Вид спецодежды">
+            <input type="number" id="срок-носки" placeholder="Срок носки">
+            <input type="number" id="стоимость" placeholder="Стоимость">
+            <button onclick="addСпецодежда()">Добавить</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Добавить цех</h2>
+            <input type="text" id="наименование-цеха" placeholder="Наименование цеха">
+            <input type="text" id="начальник-цеха" placeholder="Начальник цеха">
+            <button onclick="addЦех()">Добавить</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Добавить работника</h2>
+            <input type="text" id="фио-работника" placeholder="ФИО работника">
+            <input type="text" id="должность-работника" placeholder="Должность">
+            <input type="number" id="скидка-работника" placeholder="Скидка">
+            <button onclick="addРаботник()">Добавить</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Добавить получение</h2>
+            <input type="number" id="код-работника" placeholder="Код работника">
+            <input type="number" id="код-спецодежды" placeholder="Код спецодежды">
+            <input type="date" id="дата-получения" placeholder="Дата получения">
+            <input type="text" id="роспись" placeholder="Роспись">
+            <button onclick="addПолучение()">Добавить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
